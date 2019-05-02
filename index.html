@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h5>Length Unit Converter</h5>
+    <div id="fromWrapper">
+        <p>From: </p>
+        <select name='convertFrom' onchange="ConvertUnits()">
+            <option>kilometers</option>
+            <option>meters</option>
+        </select>
+        <input type="text" oninput="ConvertUnits()">
+    </div>
+    <p></p>
+    <div id="toWrapper">
+        <p>To: </p>
+        <select name='convertTo' onchange="ConvertUnits()">
+            <option>kilometers</option>
+            <option>meters</option>
+            <option>centimeters</option>
+            <option>miles</option>
+            <option>feet</option>
+            <option>inches</option>
+        </select>
+        <div id="toValue">0</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
